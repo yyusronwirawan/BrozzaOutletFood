@@ -1,0 +1,200 @@
+.nav-pills li a:hover {
+    background-color: #407bff;
+    color:#ffffff;
+}
+.nav-pills li a {
+    color: #407bff;
+}
+.dropdown-menu li a:hover {
+    background-color: #407bff;
+}
+nav .dropdown-menu.show {
+    margin-left: -105px !important;
+}
+nav {
+    margin-top: 0px;
+    width: 86% !important;
+    padding-top: 40px !important;
+}
+
+.sidebar {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: #f1f1f1; */
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+}
+/* Tambahkan styling untuk konten */
+.content {
+    /* margin-left: 230px; */
+    /* padding: 20px; */
+}
+.content .container {
+    margin-top: 80px;
+    z-index: 1;
+}
+.navbar {
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -80px;
+    padding: 20px;
+}
+.navbar .container-fluid {
+    margin-left: 20px;
+}
+/* .content .kontent .container .row {
+    margin: 100px;
+} */
+/* dashboard */
+.container .dashboard {
+    padding-top: 2rem;
+    padding-left: 12rem;
+}
+.container .dashboard .row {
+    /* margin-left: 2rem; */
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+/* content Gudang */
+.tb-gudang,
+.tb-barang,
+.tb-kategori,
+.tb_pemesanan,
+.tb_sirkulasi,
+.tb-Truk {
+    padding-left: 13rem;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+/* content barang */
+.tb-barang {
+    padding-left: 15rem;
+    padding-top: 2rem;
+    justify-content: center;
+}
+/* stepper */
+.steeper .steps .step {
+    .step-icon-wrap {
+        height: 80px;
+        &::before,
+        &::after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 50%;
+            height: 3px;
+            margin-top: -1px;
+            background-color: #e1e7ec;
+            content: "";
+            z-index: 1;
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+    }
+    .step-icon {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #e1e7ec;
+        border-radius: 50%;
+        background-color: #f5f5f5;
+        color: #374250;
+        font-size: 38px;
+        line-height: 81px;
+        z-index: 5;
+    }
+    .step-title {
+        color: #606975;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &:first-child .step-icon-wrap::before {
+        display: none;
+    }
+    &:last-child .step-icon-wrap::after {
+        display: none;
+    }
+    &.step.completed .step-icon-wrap::before,
+    &.step.completed .step-icon-wrap::after {
+        background-color: darkorange;
+    }
+    &.completed .step-icon {
+        border-color: #3e63b0;
+        background-color: #3e63b0;
+        color: #fff;
+    }
+}
+
+@media (max-width: 576px) {
+    .steeper .flex-sm-nowrap .step .step-icon-wrap::before,
+    .steeper .flex-sm-nowrap .step .step-icon-wrap::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .steeper .flex-md-nowrap .step .step-icon-wrap::before,
+    .steeper .flex-md-nowrap .step .step-icon-wrap::after {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .steeper .flex-lg-nowrap .step .step-icon-wrap::before,
+    .steeper .flex-lg-nowrap .step .step-icon-wrap::after {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .steeper .flex-xl-nowrap .step .step-icon-wrap::before,
+    .steeper .flex-xl-nowrap .step .step-icon-wrap::after {
+        display: none;
+    }
+}
+/* steepper end */
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 100px;
+    }
+    .navbar .container-fluid .input {
+        margin-left: auto;
+    }
+    .content {
+        margin-left: 100px;
+    }
+    .navbar {
+        margin-left: 100px;
+    }
+    .content .container .row {
+        padding-top: 70px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 550px) {
+    .sidebar {
+        width: 100px;
+    }
+    .navbar .container-fluid .input {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100px;
+    }
+    .navbar .container-fluid .input {
+        margin-left: auto;
+    }
+}
